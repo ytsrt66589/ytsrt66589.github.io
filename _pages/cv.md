@@ -4,5 +4,5 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 3
-cv_pdf: cv_0811.pdf
+cv_pdf: yytung_cv.pdf
 ---

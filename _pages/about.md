@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Master in Graduate Institute of Communication Engineering, National Tawian University
+subtitle: PhD Student in Graduate Institute of Communication Engineering, National Tawian University
 
 profile:
   align: right

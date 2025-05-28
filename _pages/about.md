@@ -1,49 +1,157 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I'm Yen-Tung (Arthur) Yeh, a first-year Ph.D. student in the [Graduate Institute of Communication Engineering](https://comm.ntu.edu.tw/en/) at **National Taiwan University**. I am a member of the [Music and AI Lab](https://affige.github.io/lab.html), advised by Prof. [Yi-Hsuan Yang](https://affige.github.io/). My research aims to **augment musicians' creativity in music production**, particularly in the production workflow. I develop high-fidelity neural audio processing models that address current challenges in music production pipelines.
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+My research interests include: 
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+* Audio effect modeling 
+* Audio effect timbre transfer
+* Audio effect representation learning 
+* Automatic mixing and mastering 
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+Previously, I was a research intern at [Sony AI](https://ai.sony/) under the supervision of [Junghyun (Tony) Koo](https://www.linkedin.com/in/junghyun-koo-525a31251/?originalSubdomain=kr) during autumn 2024, where our research focused on audio effect representation learning. I completed a research internship at [Positive Grid](https://www.positivegrid.com/) during spring 2024, focusing on neural amplifier modeling. Additionally, I maintain an ongoing collaboration with the [Taipei Music Center](https://www.tmc.taipei/), where I work on LLM-based music production understanding alongside my colleague [Bo-Yu Chen](https://scholar.google.com/citations?user=ydsKndkAAAAJ&hl=zh-TW&authuser=1).
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+Check my CV [here]( https://ytsrt66589.github.io/files/yytung_cv.pdf). 
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+<style>
+table {
+  border-collapse: collapse;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
 
-**Markdown generator**
+table td, table th {
+  border: none;
+  padding: 15px 20px;
+  vertical-align: top;
+  background-color: transparent;
+  font-size: 16px;
+}
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+table th {
+  font-weight: normal;
+  color: transparent;
+  border-bottom: none;
+  background-color: transparent;
+}
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+table tr {
+  background-color: transparent !important;
+}
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+table tr:nth-child(even) {
+  background-color: transparent !important;
+}
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+table tr:nth-child(odd) {
+  background-color: transparent !important;
+}
+
+table td:first-child {
+  width: 70%;
+}
+
+table td:last-child {
+  width: 30%;
+  text-align: right;
+}
+
+.logo {
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.pub-links {
+  margin-top: 8px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.pub-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #007acc;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+</style>
+
+# 🎓 Education
+
+|---|---|
+| **National Taiwan University**<br>*Ph.D. in Graduate Institute of Communication Engineering*<br>Advisor: [Yi-Hsuan Yang](https://affige.github.io/) | Feb. 2025 - Present<br><img src="../images/ntu_logo.png" alt="NTU" class="logo"> |
+| **National Taiwan University**<br>*M.S. in Graduate Institute of Communication Engineering*<br>Advisor: [Yi-Hsuan Yang](https://affige.github.io/) | Feb. 2024 - Dec. 2024<br><img src="../images/ntu_logo.png" alt="NTU" class="logo"> |
+| **National Taiwan University**<br>*B.S. in Computer Science and Information Engineering* | Sep. 2017 - Aug. 2022<br><img src="../images/ntu_logo.png" alt="NTU" class="logo"> |
+
+# Professional Experience
+
+| **Positive Grid**<br>*Deep Learning Audio Intern* <br> Topic: Unified Framework for Guitar Synthesis| April. 2025 -- Now<br><img src="../images/pg_logo.png" alt="PG" class="logo"> |
+| **Sony AI**<br>*Research intern*<br>Advisor: [Junghyun (Tony) Koo](https://www.linkedin.com/in/junghyun-koo-525a31251/?originalSubdomain=kr)<br> Topic: Audio Effect Representation Learning| Sep. 2024 -- Dec. 2024<br><img src="../images/sonyai_logo.png" alt="SonyAI" class="logo"> |
+| **Positive Grid**<br>*Deep Learning Audio Intern* <br> Topic: DDSP Guitar Amplifier Modeling| Mar. 2024 -- Sep. 2024<br><img src="../images/pg_logo.png" alt="PG" class="logo"> |
+| **Taipei Music Center**<br>*Research Scientist/Engineering Collaborator* <br>Project Leader: [Bo-Yu Chen](https://scholar.google.com/citations?user=ydsKndkAAAAJ&hl=zh-TW&authuser=1)<br> Topic: LLM-based Music Production Understanding| Oct. 2023 -- Sep. 2024<br><img src="../images/tmc_logo.svg" alt="TMC" class="logo"> |
+| **National Taiwan University**<br>*Research Assistant* <br>Advisor: [Yi-Hsuan Yang](https://affige.github.io/)<br> Topic: Neural Audio Effect Modeling| Aug. 2023 -- Jan. 2024<br><img src="../images/ntu_logo.png" alt="NTU" class="logo"> |
+| **Research Center for IT Innovation, Academia Sinica**<br>*Research Assistant* <br>Advisor: [Yi-Hsuan Yang](https://affige.github.io/)<br> Topic: Neural Audio Effect Modeling| Aug. 2022 - Mar.2023<br><img src="../images/sinica_logo.png" alt="SINICA" class="logo"> |
+
+# Honors & Awards
+
+|---------------------|------|------|
+| **NSTC Graduate  Research Fellowship**<br>*[National Science and Technology Council](https://www.nstc.gov.tw/?l=en)*| 2024-2027 |
+| **Telecom Industry Excellence Fellowship**<br>*[Graduate Institute of Communication Engineering, National Taiwan University](https://gice.ntu.edu.tw/en/)*| 2024-2028 |
+
+<style>
+.orange-bold {
+  color: #FF6B35;
+  font-weight: bold;
+}
+.conference-name {
+  color: #17A2B8;
+  font-weight: bold;
+}
+</style>
+
+# Publications
+
+## Conference Papers
+
+* **DDSP Guitar Amp: Interpretable Guitar Amplifier Modeling**<br>***Yen-Tung Yeh***, Yu-Hua Chen, Yuan-Chiao Cheng, Jui-Te Wu, Jun-Jie Fu, Yi-Fan Yeh, and Yi-Hsuan Yang.<br>*International Conference on Acoustics, Speech and Signal Processing (<span class="conference-name">ICASSP</span>) 2025*<br><span class="orange-bold">Oral Presentation</span>
+  <div class="pub-links"><a href="https://arxiv.org/abs/2408.11405">paper</a> <a href="https://ytsrt66589.github.io/ddspGuitarAmp_Demo/">demo</a> <a href="https://drive.google.com/file/d/1PyGaXccoIVbT8AigcXrRArI8bMe681ph/view?usp=drive_link">slides</a> <a href="https://drive.google.com/file/d/10FdqtkBMvDJYuA17_SeeyEuFDap9_W3h/view?usp=sharing">poster</a></div>
+
+* **Towards Zero-Shot Amplifier Modeling: One-to-Many Amplifier Modeling via Tone Embedding Control**<br>Yu-Hua Chen, ***Yen-Tung Yeh***, Yuan-Chiao Cheng, Jui-Te Wu, Yu-Hsiang Ho, Jyh-Shing Roger Jang, and Yi-Hsuan Yang.<br>*Proceedings of the 25th International Society for Music Information Retrieval Conference (<span class="conference-name">ISMIR</span>) 2024*
+  <div class="pub-links"><a href="https://arxiv.org/pdf/2407.10646">paper</a> <a href="https://ss12f32v.github.io/Guitar-Zero-Shot/">demo</a></div>
+
+* **Hyper Recurrent Neural Network: Condition Mechanisms for Black-box Audio Effect Modeling**<br>***Yen-Tung Yeh***, Wen-Yi Hsiao, and Yi-Hsuan Yang.<br>*27th International Conference on Digital Audio Effects (<span class="conference-name">DAFx</span>) 2024*<br><span class="orange-bold">Oral Presentation</span>
+  <div class="pub-links"><a href="https://arxiv.org/abs/2408.04829">paper</a> <a href="https://github.com/ytsrt66589/pyneuralfx/tree/main">code</a> <a href="https://drive.google.com/file/d/1pyWjTqctVoQFC_7Q3yyb5vyIUq0sydRr/view?usp=sharing">poster</a></div>
+
+* **Exploiting Pre-Trained Feature Networks for Generative Adversarial Networks in Audio-Domain Loop Generation**<br>***Yen-Tung Yeh***, Bo-Yu Chen and Yi-Hsuan Yang.<br>*Proceedings of the 23rd International Society for Music Information Retrieval Conference (<span class="conference-name">ISMIR</span>) 2022*
+  <div class="pub-links"><a href="https://arxiv.org/abs/2209.01751">paper</a> <a href="https://github.com/ytsrt66589/pjloop-gan">code</a></div>
+
+* **A Benchmarking Initiative for Audio-Domain Music Generation Using the Freesound Loop Dataset**<br>Tun-Min Hung, Bo-Yu Chen, ***Yen-Tung Yeh***, and Yi-Hsuan Yang.<br>*Proceedings of the 22nd International Society for Music Information Retrieval Conference (<span class="conference-name">ISMIR</span>) 2021*
+  <div class="pub-links"><a href="https://arxiv.org/abs/2108.01576">paper</a> <a href="https://github.com/allenhung1025/LoopTest">code</a></div>
+
+## Workshop Papers & Late-Breaking Demos
+
+* **AI TrackMate: Finally, Someone Who Will Give Your Music More Than Just 'Sounds Great!'**<br>Yi-Lin Jiang, Chia-Ho Hsiung, ***Yen-Tung Yeh***, Lu-Rong Chen, Bo-Yu Chen.<br>*<span class="conference-name">NeurIPS</span> 2024 Creativity AI Track*
+  <div class="pub-links"><a href="https://arxiv.org/abs/2412.06617">paper</a> <a href="https://worzpro.github.io/aitrackmate-demo-page/">demo</a></div>
+
+* **PyNeuralFx: A Python Package for Neural Audio Effect Modeling**<br>***Yen-Tung Yeh***, Wen-Yi Hsiao, and Yi-Hsuan Yang.<br>*<span class="conference-name">ISMIR LBD</span> 2024*
+  <div class="pub-links"><a href="https://arxiv.org/abs/2408.06053">paper</a> <a href="https://github.com/ytsrt66589/pyneuralfx/tree/main">code</a> <a href="https://drive.google.com/file/d/1KBkzzeuLbPOJ7gsb94DqZ3aakJG797c8/view?usp=sharing">poster</a></div>
+
+* **Demo of Zero-Shot Guitar Amplifier Modelling: Enhancing Modeling with Hyper Neural Networks**<br>Yu-Hua Chen, Yuan-Chiao Cheng, ***Yen-Tung Yeh***, Jui-Te Wu, Yu-Hsiang Ho, Jyh-Shing Roger Jang, and Yi-Hsuan Yang.<br>*<span class="conference-name">ISMIR LBD</span> 2024*
+  <div class="pub-links"><a href="https://arxiv.org/abs/2410.04702">paper</a></div>
+
+## Under Review
+
+* **Towards Generalizability to Tone and Content Variations in the Transcription of Amplifier Rendered Electric Guitar Audio**<br>Yu-Hua Chen, Yuan-Chiao Cheng, ***Yen-Tung Yeh***, Jui-Te Wu, Jyh-Shing Roger Jang, Yi-Hsuan Yang.<br>*<span class="conference-name">Under Review</span>*
+  <div class="pub-links"><a href="https://arxiv.org/abs/2504.07406">paper</a> <a href="https://ss12f32v.github.io/Guitar-Transcription-with-Amplifier/">demo</a></div>

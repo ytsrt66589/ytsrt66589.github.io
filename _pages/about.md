@@ -202,7 +202,7 @@ table td:last-child {
 
 * **Hyper Recurrent Neural Network: Condition Mechanisms for Black-box Audio Effect Modeling**<br>***Yen-Tung Yeh***, Wen-Yi Hsiao, and Yi-Hsuan Yang.<br>*27th International Conference on Digital Audio Effects (<span class="conference-name">DAFx</span>) 2024*<br><span class="orange-bold">Oral Presentation</span>
 <br><span class="field-tag audio-effects">Audio Effects Modeling</span><br>
-  <div class="pub-links"><a href="https://arxiv.org/abs/2408.04829">paper</a> <a href="https://github.com/ytsrt66589/pyneuralfx/tree/main">code</a> <a href="https://ytsrt66589.github.io/files/DAFx24Slides.pdf">slides</a><a href="https://ytsrt66589.github.io/files/DAFx24Poster.pdf">poster</a></div>
+  <div class="pub-links"><a href="https://arxiv.org/abs/2408.04829">paper</a> <a href="https://github.com/ytsrt66589/pyneuralfx/tree/main">code</a> <a href="https://yytung.notion.site/HyperRNN-ce8cecb3ef6a41fcbcb54a94f9f6de6f">demo</a><a href="https://ytsrt66589.github.io/files/DAFx24Slides.pdf">slides</a><a href="https://ytsrt66589.github.io/files/DAFx24Poster.pdf">poster</a></div>
 
 * **Exploiting Pre-Trained Feature Networks for Generative Adversarial Networks in Audio-Domain Loop Generation**<br>***Yen-Tung Yeh***, Bo-Yu Chen and Yi-Hsuan Yang.<br>*Proceedings of the 23rd International Society for Music Information Retrieval Conference (<span class="conference-name">ISMIR</span>) 2022*
 <br><span class="field-tag loop-generation">Loop Generation</span><br>

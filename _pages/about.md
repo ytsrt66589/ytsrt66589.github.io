@@ -112,13 +112,80 @@ table td:last-child {
 
 <style>
 .orange-bold {
+  background-color: #fff3e0;  /* Light orange background */
   color: #FF6B35;
-  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: 500;
+  white-space: nowrap;
+  display: inline-block;
+  margin-left: 8px;
 }
 .conference-name {
   color: #17A2B8;
   font-weight: bold;
 }
+
+/* Audio Effects Modeling - Blue */
+.field-tag.audio-effects {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+/* Guitar Tone/Transfer - Green */
+.field-tag.guitar-tone {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+/* Loop Generation - Purple */
+.field-tag.loop-generation {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+/* LLM Music Production Understanding - Teal */
+.field-tag.llm-music {
+  background-color: #e0f2f1;
+  color: #00695c;
+}
+
+/* Toolkit - Gray */
+.field-tag.toolkit {
+  background-color: #f5f5f5;
+  color: #424242;
+}
+
+/* Guitar Transcription - Indigo */
+.field-tag.guitar-transcription {
+  background-color: #e8eaf6;
+  color: #3f51b5;
+}
+
+.field-tag.ddsp {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+/* Audio Plugin - Brown */
+.field-tag.audio-plugin {
+  background-color: #efebe9;
+  color: #5d4037;
+}
+
+/* Base field-tag styles */
+.field-tag {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: 500;
+  white-space: nowrap;
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
 </style>
 
 # Publications
@@ -126,32 +193,40 @@ table td:last-child {
 ## Conference Papers
 
 * **DDSP Guitar Amp: Interpretable Guitar Amplifier Modeling**<br>***Yen-Tung Yeh***, Yu-Hua Chen, Yuan-Chiao Cheng, Jui-Te Wu, Jun-Jie Fu, Yi-Fan Yeh, and Yi-Hsuan Yang.<br>*International Conference on Acoustics, Speech and Signal Processing (<span class="conference-name">ICASSP</span>) 2025*<br><span class="orange-bold">Oral Presentation</span>
+<br><span class="field-tag audio-effects">Audio Effects Modeling</span><span class="field-tag ddsp">DDSP</span><span class="field-tag guitar-tone">Guitar Tone Modeling</span><br>
   <div class="pub-links"><a href="https://arxiv.org/abs/2408.11405">paper</a> <a href="https://ytsrt66589.github.io/ddspGuitarAmp_Demo/">demo</a> <a href="https://drive.google.com/file/d/1PyGaXccoIVbT8AigcXrRArI8bMe681ph/view?usp=drive_link">slides</a> <a href="https://drive.google.com/file/d/10FdqtkBMvDJYuA17_SeeyEuFDap9_W3h/view?usp=sharing">poster</a></div>
 
 * **Towards Zero-Shot Amplifier Modeling: One-to-Many Amplifier Modeling via Tone Embedding Control**<br>Yu-Hua Chen, ***Yen-Tung Yeh***, Yuan-Chiao Cheng, Jui-Te Wu, Yu-Hsiang Ho, Jyh-Shing Roger Jang, and Yi-Hsuan Yang.<br>*Proceedings of the 25th International Society for Music Information Retrieval Conference (<span class="conference-name">ISMIR</span>) 2024*
+<br><span class="field-tag audio-effects">Audio Effects Modeling</span><span class="field-tag guitar-tone">Guitar Tone Transfer</span><br>
   <div class="pub-links"><a href="https://arxiv.org/pdf/2407.10646">paper</a> <a href="https://ss12f32v.github.io/Guitar-Zero-Shot/">demo</a></div>
 
 * **Hyper Recurrent Neural Network: Condition Mechanisms for Black-box Audio Effect Modeling**<br>***Yen-Tung Yeh***, Wen-Yi Hsiao, and Yi-Hsuan Yang.<br>*27th International Conference on Digital Audio Effects (<span class="conference-name">DAFx</span>) 2024*<br><span class="orange-bold">Oral Presentation</span>
+<br><span class="field-tag audio-effects">Audio Effects Modeling</span><br>
   <div class="pub-links"><a href="https://arxiv.org/abs/2408.04829">paper</a> <a href="https://github.com/ytsrt66589/pyneuralfx/tree/main">code</a> <a href="https://drive.google.com/file/d/1pyWjTqctVoQFC_7Q3yyb5vyIUq0sydRr/view?usp=sharing">poster</a></div>
 
 * **Exploiting Pre-Trained Feature Networks for Generative Adversarial Networks in Audio-Domain Loop Generation**<br>***Yen-Tung Yeh***, Bo-Yu Chen and Yi-Hsuan Yang.<br>*Proceedings of the 23rd International Society for Music Information Retrieval Conference (<span class="conference-name">ISMIR</span>) 2022*
+<br><span class="field-tag loop-generation">Loop Generation</span><br>
   <div class="pub-links"><a href="https://arxiv.org/abs/2209.01751">paper</a> <a href="https://github.com/ytsrt66589/pjloop-gan">code</a></div>
 
 * **A Benchmarking Initiative for Audio-Domain Music Generation Using the Freesound Loop Dataset**<br>Tun-Min Hung, Bo-Yu Chen, ***Yen-Tung Yeh***, and Yi-Hsuan Yang.<br>*Proceedings of the 22nd International Society for Music Information Retrieval Conference (<span class="conference-name">ISMIR</span>) 2021*
+<br><span class="field-tag loop-generation">Loop Generation</span><br>
   <div class="pub-links"><a href="https://arxiv.org/abs/2108.01576">paper</a> <a href="https://github.com/allenhung1025/LoopTest">code</a></div>
 
 ## Workshop Papers & Late-Breaking Demos
 
-* **AI TrackMate: Finally, Someone Who Will Give Your Music More Than Just 'Sounds Great!'**<br>Yi-Lin Jiang, Chia-Ho Hsiung, ***Yen-Tung Yeh***, Lu-Rong Chen, Bo-Yu Chen.<br>*<span class="conference-name">NeurIPS</span> 2024 Creativity AI Track*
+* **AI TrackMate: Finally, Someone Who Will Give Your Music More Than Just 'Sounds Great!'**<br>Yi-Lin Jiang, Chia-Ho Hsiung, ***Yen-Tung Yeh***, Lu-Rong Chen, Bo-Yu Chen.<br><span class="conference-name">*NeurIPS Creativity AI Track*</span> 2024 <br><span class="field-tag llm-music">LLM Music Production Understanding</span><br>
   <div class="pub-links"><a href="https://arxiv.org/abs/2412.06617">paper</a> <a href="https://worzpro.github.io/aitrackmate-demo-page/">demo</a></div>
 
 * **PyNeuralFx: A Python Package for Neural Audio Effect Modeling**<br>***Yen-Tung Yeh***, Wen-Yi Hsiao, and Yi-Hsuan Yang.<br>*<span class="conference-name">ISMIR LBD</span> 2024*
+<br><span class="field-tag audio-effects">Audio Effects Modeling</span><span class="field-tag toolkit">Toolkit</span><br>
   <div class="pub-links"><a href="https://arxiv.org/abs/2408.06053">paper</a> <a href="https://github.com/ytsrt66589/pyneuralfx/tree/main">code</a> <a href="https://drive.google.com/file/d/1KBkzzeuLbPOJ7gsb94DqZ3aakJG797c8/view?usp=sharing">poster</a></div>
 
 * **Demo of Zero-Shot Guitar Amplifier Modelling: Enhancing Modeling with Hyper Neural Networks**<br>Yu-Hua Chen, Yuan-Chiao Cheng, ***Yen-Tung Yeh***, Jui-Te Wu, Yu-Hsiang Ho, Jyh-Shing Roger Jang, and Yi-Hsuan Yang.<br>*<span class="conference-name">ISMIR LBD</span> 2024*
+<br><span class="field-tag audio-effects">Audio Effects Modeling</span><span class="field-tag audio-plugin">Audio Plugin</span><br>
   <div class="pub-links"><a href="https://arxiv.org/abs/2410.04702">paper</a></div>
 
 ## Under Review
 
 * **Towards Generalizability to Tone and Content Variations in the Transcription of Amplifier Rendered Electric Guitar Audio**<br>Yu-Hua Chen, Yuan-Chiao Cheng, ***Yen-Tung Yeh***, Jui-Te Wu, Jyh-Shing Roger Jang, Yi-Hsuan Yang.<br>*<span class="conference-name">Under Review</span>*
+<br><span class="field-tag guitar-transcription">Guitar Transcription</span><br>
   <div class="pub-links"><a href="https://arxiv.org/abs/2504.07406">paper</a> <a href="https://ss12f32v.github.io/Guitar-Transcription-with-Amplifier/">demo</a></div>

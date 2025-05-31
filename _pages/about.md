@@ -97,7 +97,7 @@ table td:last-child {
 
 # Professional Experience
 
-| **Positive Grid**<br>*Deep Learning Audio Intern* <br> Topic: Unified Framework for Guitar Synthesis| April. 2025 -- Now<br><img src="../images/pg_logo.png" alt="PG" class="logo"> |
+| **Positive Grid**<br>*Deep Learning Audio Intern* <br> Topic: Unified Framework for Guitar Tone Transfer| April. 2025 -- Now<br><img src="../images/pg_logo.png" alt="PG" class="logo"> |
 | **Sony AI**<br>*Research intern*<br>Advisor: [Junghyun (Tony) Koo](https://www.linkedin.com/in/junghyun-koo-525a31251/?originalSubdomain=kr)<br> Topic: Audio Effect Representation Learning| Sep. 2024 -- Dec. 2024<br><img src="../images/sonyai_logo.png" alt="SonyAI" class="logo"> |
 | **Positive Grid**<br>*Deep Learning Audio Intern* <br> Topic: DDSP Guitar Amplifier Modeling| Mar. 2024 -- Sep. 2024<br><img src="../images/pg_logo.png" alt="PG" class="logo"> |
 | **Taipei Music Center**<br>*Research Scientist/Engineering Collaborator* <br>Project Leader: [Bo-Yu Chen](https://scholar.google.com/citations?user=ydsKndkAAAAJ&hl=zh-TW&authuser=1)<br> Topic: LLM-based Music Production Understanding| Oct. 2023 -- Sep. 2024<br><img src="../images/tmc_logo.svg" alt="TMC" class="logo"> |

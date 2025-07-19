@@ -97,7 +97,7 @@ table td:last-child {
 
 # Professional Experience
 
-| **Positive Grid**<br>*Deep Learning Audio Intern* <br> Topic: Unified Framework for Guitar Tone Transfer| April. 2025 -- Now<br><img src="../images/pg_logo.png" alt="PG" class="logo"> |
+| **Positive Grid**<br>*Deep Learning Audio Intern* <br> Topic: Unified Framework for Guitar Tone Transfer| April. 2025 -- July. 2025<br><img src="../images/pg_logo.png" alt="PG" class="logo"> |
 | **Sony AI**<br>*Research intern*<br>Advisor: [Junghyun (Tony) Koo](https://www.linkedin.com/in/junghyun-koo-525a31251/?originalSubdomain=kr)<br> Topic: Audio Effect Representation Learning| Sep. 2024 -- Dec. 2024<br><img src="../images/sonyai_logo.png" alt="SonyAI" class="logo"> |
 | **Positive Grid**<br>*Deep Learning Audio Intern* <br> Topic: DDSP Guitar Amplifier Modeling| Mar. 2024 -- Sep. 2024<br><img src="../images/pg_logo.png" alt="PG" class="logo"> |
 | **Taipei Music Center**<br>*Research Scientist/Engineering Collaborator* <br>Project Leader: [Bo-Yu Chen](https://scholar.google.com/citations?user=ydsKndkAAAAJ&hl=zh-TW&authuser=1)<br> Topic: LLM-based Music Production Understanding| Oct. 2023 -- Sep. 2024<br><img src="../images/tmc_logo.svg" alt="TMC" class="logo"> |
@@ -191,6 +191,10 @@ table td:last-child {
 # Publications
 
 ## Conference Papers
+
+* **Fx-Encoder++: Extracting Instrument-Wise Audio Effects Representations from Mixtures**<br>***Yen-Tung Yeh***, Junghyun Koo, Marco A. Martínez-Ramírez, Wei-Hsiang Liao, Yi-Hsuan Yang and Yuki Mitsufuji.<br>*Proceedings of the 26th International Society for Music Information Retrieval Conference (<span class="conference-name">ISMIR</span>) 2025*
+<br><span class="field-tag audio-effects">Audio Effects Representation</span><br>
+  <div class="pub-links"><a href="https://arxiv.org/abs/2507.02273">paper</a> <a href="https://github.com/SonyResearch/Fx-Encoder_PlusPlus">code</a></div>
 
 * **DDSP Guitar Amp: Interpretable Guitar Amplifier Modeling**<br>***Yen-Tung Yeh***, Yu-Hua Chen, Yuan-Chiao Cheng, Jui-Te Wu, Jun-Jie Fu, Yi-Fan Yeh, and Yi-Hsuan Yang.<br>*International Conference on Acoustics, Speech and Signal Processing (<span class="conference-name">ICASSP</span>) 2025*<br><span class="orange-bold">Oral Presentation</span>
 <br><span class="field-tag audio-effects">Audio Effects Modeling</span><span class="field-tag ddsp">DDSP</span><span class="field-tag guitar-tone">Guitar Tone Modeling</span><br>
